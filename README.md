@@ -1,69 +1,69 @@
-# React + TypeScript + Vite
+# Task Management App  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Task Management App built with **React** + **TypeScript**, styled using **Tailwind CSS**.  
+It allows users to **add**, **edit**, **delete**, and **mark tasks as completed**, with data persistence using **local storage** and **Filter**.  
+A quote is fetched from an external API and displayed at the top.  
 
-Currently, two official plugins are available:
+## 🌟 Features  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✅ Add a new task (Title, Description, Due Date)  
+✅ Edit an existing task  
+✅ Delete a task  
+✅ Mark a task as completed  
+✅ Filter tasks (All / Completed / Pending)  
+✅ Persist tasks using local storage  
+✅ Fetch and display a random motivational quote from [api-ninja]([https://quotable.io/](https://api-ninjas.com/api/quotes))  
+✅ Responsive design  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠 Tech Stack  
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **React + TypeScript**  
+- **Tailwind CSS**  
+- **Redux Toolkit** for state management  
+- **Axios** for API calls  
+- **Vite** (if you used it) or Create React App  
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🚀 Demo  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **GitHub Repository:** [TaskManagement](https://github.com/Vidhya150620/TaskManagement)  
+- **Live App:** [Task Management on Vercel](https://taskmanagement-c1370f1n1-vidhya150620s-projects.vercel.app/)  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📸 Screenshots  
+
+### 💻 Home View  
+![Home View](![Screenshot (2)](https://github.com/user-attachments/assets/68ba88fc-a517-4254-9798-426a41647854)
+  
+
+### ➕ Add Task Modal  
+![Add Task](![Screenshot (1)](https://github.com/user-attachments/assets/de4b00c0-7d2e-4d46-b836-92d43edef092)
+)  
+
+
+
+### 📋 Filtered Tasks  
+![Filter Tasks](![Screenshot (4)](https://github.com/user-attachments/assets/f373678b-aece-4230-8208-1ce3c3e8eeb5)
+)  
+
+### Edit
+![Edit task] (![Screenshot (3)](https://github.com/user-attachments/assets/e1f8df33-e74a-4311-8c61-0c113ded7634)
+)
+
+### overall
+![OverAll](![Screenshot 2025-07-01 175128](https://github.com/user-attachments/assets/61756bdb-ee2d-4dea-966f-53213a6807ab)
+)
+
+---
+
+## 📝 Installation  
+
+```bash
+git clone https://github.com/Vidhya150620/TaskManagement.git  
+cd TaskManagement  
+npm install  
+npm run dev  # or npm start if CRA
